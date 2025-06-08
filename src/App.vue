@@ -7,7 +7,6 @@
   <div>
     <progress :value="current + 1" :max="questions.length"></progress>
     <p>진행률: {{ current + 1 }} / {{ questions.length }}</p>
-
     <div v-if="question">
       <p>{{ question.question }}</p>
       <div v-for="(text, key) in question.choices" :key="key">
